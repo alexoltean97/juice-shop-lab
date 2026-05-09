@@ -1,0 +1,6 @@
+kubectl apply -f juice-shop-service.yaml
+
+kubectl apply -f 
+
+kubectl create -f juice-shop-service.yaml
+service/juice-shop created

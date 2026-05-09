@@ -1,0 +1,2 @@
+Run container
+docker container run -d -p 8000:3000 bkimminich/juice-shop:latest

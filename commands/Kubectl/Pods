@@ -1,0 +1,8 @@
+kubectl get pods
+
+kubectl describe pod <pod>
+
+kubectl logs <pod>
+
+kubectl exec -it <pod> --sh
+
