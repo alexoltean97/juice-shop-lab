@@ -1,0 +1,18 @@
+kubectl run --image=nginx nginx
+
+kubectl expose deployment nginx --port 80
+
+kubectl scale deployment nginx --replicas=5
+
+kubectl create deployment --image=nginx nginx
+
+kubectl edit deployment nginx
+
+kubectl set image deployment nginx nginx=nginx:1.18
+
+kubectl create -f nginx.yaml
+
+kubectl replace -f nginx.yaml
+
+kubect delete -f nginx.yaml
+

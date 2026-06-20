@@ -1,0 +1,5 @@
+kubectl rollout status deployment/<nameOfDeploymnet>
+
+kubectl rollout history deployment/<nameOfDeploymnet>
+
+kubectl rollout undo deployment/<nameOfDeploymnet>

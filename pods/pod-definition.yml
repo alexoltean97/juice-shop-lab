@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: juice-shop-pod
+  labels:
+    app: juice-shop
+    type: web
+spec:
+  containers:
+    - name: juice-shop
+      image: bkimminich/juice-shop:latest
+      ports:
+        - containerPort: 3000    

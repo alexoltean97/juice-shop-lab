@@ -8,7 +8,7 @@ metadata:
     type: web
 
 spec:
-  replicas: 3
+  replicas: 6
 
   selector:
     matchLabels:
@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: juice-shop
-          image: bkimminich/juice-shop:latest
+          image: bkimminich/juice-shop:v19.2.0
 
           ports:
             - containerPort: 3000

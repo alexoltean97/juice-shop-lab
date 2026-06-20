@@ -1,0 +1,14 @@
+
+kubectl get pods --namespace=kube=system
+
+ kubectl describe pod kube-scheduler-desktop-control-plane --namespace=kube-system
+
+ kubectl create -f pod-definition.yml --namespace=dev
+
+ kubectl create -f namespace-dev.yaml
+
+ kubectl create namespace dev
+
+ kubectl config set-context $(kubectl config current-context) --namespace=dev
+
+  kubectl get pods --all-namespaces

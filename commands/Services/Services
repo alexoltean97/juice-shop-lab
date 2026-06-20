@@ -4,3 +4,5 @@ kubectl apply -f
 
 kubectl create -f juice-shop-service.yaml
 service/juice-shop created
+
+kubectl port-forward pod/juice-shop-pod 3000:3000

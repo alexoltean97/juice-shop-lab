@@ -6,3 +6,9 @@ kubectl logs <pod>
 
 kubectl exec -it <pod> --sh
 
+kubectl run <pod>
+
+kubectl apply -f pod-definition.yml
+
+kubectl create -f pod-definition.yml 
+

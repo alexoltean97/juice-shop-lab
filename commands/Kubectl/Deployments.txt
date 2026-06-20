@@ -1,0 +1,18 @@
+kubectl create -f juice-shop-deployment.yaml
+
+kubectl get deployments
+
+kubectl apply -f  juice-shop-deployment.yaml
+
+kubectl scale --replicas=8 -f .\juice-shop-deployment.yaml
+
+kubectl scale --replicas=10 deployment juice-shop
+
+-f stands for provide a file
+
+kubectl delete deployment <nameOfDeploymnet> -> (Also deletes all underlying pods)
+
+kubectl set image deployment/<nameOfDeploymnet> \ nginx=nginx:1.9.1
+
+kubectl create -f deployment.yaml --record 
+ 

@@ -1,5 +1,0 @@
-kubectl create -f juice-shop-deployment.yaml
-
-kubectl get deployments
-
-kubectl apply -f  juice-shop-deployment.yaml
