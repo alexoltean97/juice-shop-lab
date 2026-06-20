@@ -12,3 +12,5 @@ kubectl get pods --namespace=kube=system
  kubectl config set-context $(kubectl config current-context) --namespace=dev
 
   kubectl get pods --all-namespaces
+
+  kubectl config view --minify --output 'jsonpath={..namespace}'

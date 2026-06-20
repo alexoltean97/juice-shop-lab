@@ -1,0 +1,4 @@
+kubectl get pods --selector function=webserver
+
+Can get any selector I want !
+

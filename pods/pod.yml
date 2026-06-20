@@ -4,6 +4,7 @@ metadata:
   name: nginx
   labels:
     app: nginx
+    function: webserver
 spec:
   containers:
     - name: nginx
