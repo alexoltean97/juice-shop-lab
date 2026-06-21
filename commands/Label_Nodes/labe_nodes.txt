@@ -1,0 +1,11 @@
+kubectl label nodes <node-name> <label-key>=<label-value>
+
+kubectl label nodes desktop-worker size=Large\
+
+
+#Undo 
+kubectl label nodes desktop-worker size-
+
+
+#Check labels
+kubectl get node desktop-worker --show-labels

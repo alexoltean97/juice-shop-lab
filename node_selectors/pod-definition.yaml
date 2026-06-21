@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod
+spec:
+  containers:
+    - name: attlasian
+      image: atlassian/confluence:9.2.7-ubi9-jdk21
+  nodeSelector:
+    size: Large    
