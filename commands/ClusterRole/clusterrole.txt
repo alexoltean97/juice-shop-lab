@@ -1,0 +1,3 @@
+kubectl create -f cluster-admin-role.yaml
+
+kubectl create -f cluster-admin-role-binding.yaml

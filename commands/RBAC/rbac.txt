@@ -1,0 +1,20 @@
+kubectl create -f developer-role.yaml
+
+kubectl create -f devuser-developer-binding.yaml
+
+kubectl get roles
+
+kubect get rolebindings
+
+kubectl describe role developer
+
+kubectl describe rolebindings devuser-developer-binding
+
+kubect auth can-i create deployments
+
+kubectl auth can-i create deployments --as dev-user
+
+kubectl auth can-i create pods --as dev-user
+
+kubect auth can-i create pods --as dev-user --namespaces test
+

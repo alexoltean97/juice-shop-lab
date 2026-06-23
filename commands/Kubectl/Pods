@@ -12,3 +12,4 @@ kubectl apply -f pod-definition.yml
 
 kubectl create -f pod-definition.yml 
 
+kubectl get pods --all-namespaces
