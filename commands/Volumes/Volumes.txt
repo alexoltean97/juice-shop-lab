@@ -1,0 +1,6 @@
+kubectl create -f pv-definition.yaml
+
+kubectl get persistentvolumeclaim
+
+kubectl delete persistentvolumeclaim myclaim
+
