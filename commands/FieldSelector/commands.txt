@@ -1,0 +1,14 @@
+Field selectors let you select Kubernetes objects based on the value of one or more resource fields. Here are some examples of field selector queries:
+
+metadata.name=my-service
+metadata.namespace!=default
+status.phase=Pending
+
+
+kubectl get pods --field-selector status.phase=Running
+
+As with label and other selectors, field selectors can be chained together as a comma-separated list. This kubectl command selects all Pods for which the status.phase does not equal Running and the spec.restartPolicy field equals Always:
+kubectl get pods --field-selector=status.phase!=Running,spec.restartPolicy=Always
+
+You can use field selectors across multiple resource types. This kubectl command selects all Statefulsets and Services that are not in the default namespace:
+kubectl get statefulsets,services --all-namespaces --field-selector metadata.namespace!=default
